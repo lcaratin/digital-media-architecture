@@ -41,31 +41,36 @@
 				<div class="col s12" style="padding-left: 30px;">
 					<header>
 						<h4 style="margin-bottom: 0px;">
-							Hierarquia de memória	
+							Microprocessador 	
 						</h4>
 						<p style="margin-top: 0px;">
 							<i>
-								Introdução ao estudo da hierarquia de memória
+								Introdução ao estudo de Microprocessadores
 							</i>
 						</p>
 					</header>
 					<section>
-						Memórias são dispositivos usados no armazenamento e recuperação de informação. Apresentam uma grande variedade de tecnologias, desempenho, custo e capacidade. O conceito de hierarquia de memória fornece uma visão do custo, desempenho e capacidade das memórias.
-						<br/><br/> Na base da pirâmide, tem-se as memórias de baixo custo, maior capacidade de armazenamento e menor desempenho. No topo da pirâmide, tem-se as memórias de maior custo, menor capacidade de armazenamento e maior desempenho.
-						<br/><br/> <img src="../../images/articles/hierarquia_1.png" class="">
-						<br/><h5 style="font-weight: bold;">
-							Características de Desempenho
-						</h5>
-						As memórias podem ser caracterizadas pelos seguintes parâmetros de desempenho: tempo de acesso, capacidade de armazenamento, volatilidade, tecnologia e custo.
-						<h5 style="font-weight: bold;">
-							Estudo dos dispositivos de memória
-						</h5>
-						<b> Registros (registradores) </b> – Memórias individuais agrupadas para armazenar uma palavra em binário. São de alto desempenho, usadas pela CPU ou por outros dispositivos para armazenamento temporário de dados. Alguns registradores na CPU participam do processamento e podem ser acessados por programas. Registradores especiais somente podem ser acessados pela CPU.
-						<br/> <b> Memória Cache (aumenta velocidade) </b> – São memórias rápidas, com capacidade de alguns KB a poucos MB, localizadas próxima à CPU. Existem em dois níveis: L1 (Level 1) e L2 (Level 2).
-						<h5 style="font-weight: bold;">
-							Estudo dos dispositivos de memória
-						</h5>
-						RAM (Random Access Memory -Memória de Acesso Randômico). Permitem leitura e gravação. O termo randômico indica que a memória tem acesso não sequencial, isto é, o tempo para gravação ou leitura de qualquer posição da memória não depende de localização. Duas tecnologias de fabricação: DRAM e SRAM.
+						<img src="../../images/articles/microprocessador.png" class="">
+					</section>
+					<section>
+						<br/><br/>Estamos acostumados a falar sobre a CPU de um computador com o termo "microprocessador", mesmo estando certo, o microprocessador é algo mais complexo que inclui várias CPUs dentro da mesma peça.
+						<br/><br/>Chamamos um microprocessador de chip, um circuito integrado complexo cujo interior aloja um ou mais núcleos de CPU. Eventualmente, pode incluir outros componentes.
+						<br/><br/>Neste último caso, falamos geralmente de um SoC (System-on-a-Chip), que incorpora as GPU/s a uma GPU (unidade de controle de gráficos, por suas siglas em inglês) e/ou um controlador E/S entre outras possíveis funções.
+						<br/><br/>Um SoC é utilizado em dispositivos eletrônicos cujo espaço é reduzido, como smartphones, tablets ou computadores ultraportáteis.
+						<br/><br/>O microprocessador por si só não pode fazer nada, mas precisa estar inter-relacionado com o resto do mundo, algo que faz através de periféricos e software
+						<br/><br/>Para realizar esta interação, o microprocessador está conectado à chamada "placa-mãe", que é o elemento pelo qual conecta os periféricos.
+						<br/><br/>Os microprocessadores, como o resto dos chips de computadores e outros dispositivos eletrônicos, são fabricados por um semicondutor chamado Silicon, um elemento químico que pode ser encontrado na natureza.
+						<br/><br/>A história do uso comercial deste material começou nos anos 50 do século passado, mas foi por volta dos anos setenta que se solidificou como o primeiro microprocessador da história, o Intel 4004 de 4 bits.
+						<br/><br/>A partir deste momento os microprocessadores foram evoluindo, sendo cada vez mais miniaturizados, adicionando mais funcionalidades e aumentando sua capacidade de cálculo bruto, atingindo assim sua situação atual, onde em cada microprocessador podemos encontrar vários núcleos de execução (na prática, são várias CPUs), diversas linhas de execução (inclusive mais de um por núcleo) e adicionando cada dia mais funcionalidades.
+						<br/><br/>Antes do surgimento do primeiro microprocessador, os computadores eram constituídos por um conjunto de vários chips com tarefas mais específicas
+						<br/><br/>Daí vem o termo "microcomputador", uma vez que os primeiros microprocessadores eram menos potentes que os conjuntos de chips existentes até à data e, por serem de tamanho menor, também resultavam em computadores menores.
+						<br/><br/>Apesar de nas primeiras épocas haver uma série de arquiteturas para a fabricação de microprocessadores, atualmente, apenas dois dominam o panorama comercial: a x86 e a ARM.
+						<br/><br/>Tecnicamente, os microprocessadores podem realizar apenas operações matemáticas simples.
+						<br/><br/>As mais complexas e operacionais podem ser realizadas a partir da decomposição da operação em operações mais básicas, assim como é possível decompor uma multiplicação em adições sucessivas
+						<br/><br/>Embora muitos definam um microprocessador como um chip de propósito geral, o certo é que também há microprocessadores de propósito específico, como os DSP’s (processadores de sinais digitais, por suas siglas em inglês), os microcontroladores ou processadores de vídeo.
+						A este respeito, neste último caso, à medida que a tecnologia avança, possibilita o uso de processadores gráficos em tarefas de caráter geral, mesmo não sendo em todos os casos.
+
+							
 					</section>
 				</div>
 			</div>
