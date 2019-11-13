@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Artigo - Hierarquia de Memórias</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../../materialize/css/materialize.min.css'>
+	<script src='../../js/jquery-3.4.1.min.js'></script>
+	<script src='../../materialize/js/materialize.min.js'></script>
+	
+	<style>
+		.image_topic {
+			width: 100%;
+			height: 120px;;
+		}
+	</style>
+</head>
+<script>
+	window.onload = () => {
+		$('.carousel.carousel-slider').carousel({
+			fullWidth: true,
+			indicators: true
+		});
+	}
+</script>
+<body>
+	<nav class="grey darken-3">
+		<div class="nav-wrapper" style="width: 100%; margin: auto; padding-left: 30px;">
+			<a href="https://lcaratin.github.io/home/" class="brand-logo">Arquitetura de Computadores</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a>Documentos</a></li>
+				<li><a>Materiais de Estudo</a></li>
+				<li><a>Artigos Científicos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row">
+		<div id="content_container" class="col s8">
+			<div class="row">
+				<div class="col s12" style="padding-left: 30px;">
+					<header>
+						<h4 style="margin-bottom: 0px;">
+							Hierarquia de memória	
+						</h4>
+						<p style="margin-top: 0px;">
+							<i>
+								Introdução ao estudo da hierarquia de memória
+							</i>
+						</p>
+					</header>
+					<section>
+						Memórias são dispositivos usados no armazenamento e recuperação de informação. Apresentam uma grande variedade de tecnologias, desempenho, custo e capacidade. O conceito de hierarquia de memória fornece uma visão do custo, desempenho e capacidade das memórias.
+						<br/><br/> Na base da pirâmide, tem-se as memórias de baixo custo, maior capacidade de armazenamento e menor desempenho. No topo da pirâmide, tem-se as memórias de maior custo, menor capacidade de armazenamento e maior desempenho.
+						<br/><br/> <img src="../../images/articles/hierarquia_1.png" class="">
+						<br/><h5 style="font-weight: bold;">
+							Características de Desempenho
+						</h5>
+						As memórias podem ser caracterizadas pelos seguintes parâmetros de desempenho: tempo de acesso, capacidade de armazenamento, volatilidade, tecnologia e custo.
+						<h5 style="font-weight: bold;">
+							Estudo dos dispositivos de memória
+						</h5>
+						<b> Registros (registradores) </b> – Memórias individuais agrupadas para armazenar uma palavra em binário. São de alto desempenho, usadas pela CPU ou por outros dispositivos para armazenamento temporário de dados. Alguns registradores na CPU participam do processamento e podem ser acessados por programas. Registradores especiais somente podem ser acessados pela CPU.
+						<br/> <b> Memória Cache (aumenta velocidade) </b> – São memórias rápidas, com capacidade de alguns KB a poucos MB, localizadas próxima à CPU. Existem em dois níveis: L1 (Level 1) e L2 (Level 2).
+						<h5 style="font-weight: bold;">
+							Estudo dos dispositivos de memória
+						</h5>
+						RAM (Random Access Memory -Memória de Acesso Randômico). Permitem leitura e gravação. O termo randômico indica que a memória tem acesso não sequencial, isto é, o tempo para gravação ou leitura de qualquer posição da memória não depende de localização. Duas tecnologias de fabricação: DRAM e SRAM.
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		<div id="side_container" class="col s4">
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: 1.55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_3.png" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Computação em nuvem? </h6>
+							<p style="    margin-top: 0;"> Os principais provedores globais de nuvem pública hoje, são a Amazon AWS, Microsoft Azure IBM e Google. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_1.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Nova Tecnologia </h6>
+							<p style="    margin-top: 0;"> Utilizada pela Silicon Quantum Computing Pty Limited e deverão ser usadas para a criação e comercialização de computadores quânticos em larga escala.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_2.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> O que é nanotecnologia? </h6>
+							<p style="    margin-top: 0;"> Entendimento e controle da matéria em nanoescala. Ela atua no desenvolvimento de materiais e componentes para diversas áreas. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Mídias Digitais - Arquitetura de Computadores</h5>
+					<p class="grey-text text-lighten-4">Site desenvolvido como parte de um projeto relativo ao trabalho N2 de Mídias Digitais com a premissa de midiatizar uma matéria (Arquitetura de Computadores) do curso de Engenharia de Computação.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">instagram.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">facebook.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">linkedin.com/engsoftwaredepressao</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>

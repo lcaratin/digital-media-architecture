@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Artigo - ULA</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../../materialize/css/materialize.min.css'>
+	<script src='../../js/jquery-3.4.1.min.js'></script>
+	<script src='../../materialize/js/materialize.min.js'></script>
+	
+	<style>
+		.image_topic {
+			width: 100%;
+			height: 120px;;
+		}
+	</style>
+</head>
+<script>
+	window.onload = () => {
+		$('.carousel.carousel-slider').carousel({
+			fullWidth: true,
+			indicators: true
+		});
+	}
+</script>
+<body>
+	<nav class="grey darken-3">
+		<div class="nav-wrapper" style="width: 100%; margin: auto; padding-left: 30px;">
+			<a href="https://lcaratin.github.io/home/" class="brand-logo">Arquitetura de Computadores</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a>Documentos</a></li>
+				<li><a>Materiais de Estudo</a></li>
+				<li><a>Artigos Científicos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row">
+		<div id="content_container" class="col s8">
+			<div class="row">
+				<div class="col s12" style="padding-left: 30px;">
+					<header>
+						<h4 style="margin-bottom: 0px;">
+							Unidade lógica e aritmética
+						</h4>
+						<p style="margin-top: 0px;">
+							<i>
+								Definições de ULA
+							</i>
+						</p>
+					</header>
+					<section>
+						<img src="../../images/articles/ula_1.png" class="">
+					</section>
+					<section>
+						A unidade lógica e aritmética (ULA), em inglês Arithmetic Logic Unit (ALU), é um circuito digital que realiza operações de adição e booleana AND. A ULA é uma peça fundamental da unidade central de processamento (UCP), e até dos mais simples microprocessadores. É na verdade, uma "grande calculadora eletrônica" do tipo desenvolvido durante a II Guerra Mundial, e sua tecnologia já estava disponível quando os primeiros computadores modernos foram construídos.
+						<br/> <br/> O matemático John von Neumann propôs o conceito de ULA em 1945, quando escreveu um relatório sobre os fundamentos para um novo computador chamado EDVAC. Pesquisas sobre ULAs ainda são uma parte importante da ciência da computação
+						<br/> <br/> A tecnologia utilizada foi inicialmente relés, herança da telefonia, e posteriormente válvulas, herança da radiofonia. Com o aparecimento dos transistores, e depois dos circuitos integrados, os circuitos da unidade aritmética e lógica passaram a ser implementados com a tecnologia de semi-condutores.
+						<br/> <br/> A ULA executa as principais operações lógicas e aritméticas do computador. Ela soma, subtrai, divide, determina se um número é positivo ou negativo ou se é zero. Além de executar funções aritméticas, uma ULA deve ser capaz de determinar se uma quantidade é menor ou maior que outra e quando quantidades são iguais. A ULA pode executar funções lógicas com letras e com números.							
+						<h5 style="font-weight: bold;">
+							Primeiro desenvolvimento
+						</h5>
+						No ano de 1946, von Neumann trabalhou com seus colegas no projeto de um computador para o Instituto de Estudos Avançados de Princeton (Princeton Institute of Advanced Studies -IAS). O computador IAS se tornara o protótipo de muitos computadores. Na proposta, von Neumann descreveu o que ele acreditava que seria preciso na sua máquina, incluindo uma ULA.
+						<br/> </br/> Von Neumann disse que a ULA era uma necessidade para o computador porque ela garantiria que o computador calcularia operações matemáticas básicas, incluindo adição, subtração, multiplicação, e divisão..[1] Ele então achava razoável que um computador contivesse um órgão especializado para essas operações.[1]
+						<h5 style="font-weight: bold;">
+							Primeiro desenvolvimento
+						</h5>
+						<img src="../../images/articles/ula_2.png" class="">
+						<br/> <br/> Muitas das ações dos computadores são executadas pela ULA. Esta recebe dados dos registradores, que são processados e os resultados da operação são armazenados nos registradores de saída. Outros mecanismos movem os dados entre esses registradores e a memória. Uma unidade de controle controla a ULA, através de circuitos que dizem que operações a ULA deve realizar.
+						<br/> <br/> 
+						<b> Operações complexas </b>
+						<br/> Um engenheiro pode projetar uma ULA para calcular qualquer operação, no entanto isso gera complexidade; o problema é que quanto mais complexa a operação, mais cara é a ULA, mais espaço utiliza do processador e mais dissipa energia.
+						
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		<div id="side_container" class="col s4">
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: 1.55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_3.png" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Computação em nuvem? </h6>
+							<p style="    margin-top: 0;"> Os principais provedores globais de nuvem pública hoje, são a Amazon AWS, Microsoft Azure IBM e Google. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_1.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Nova Tecnologia </h6>
+							<p style="    margin-top: 0;"> Utilizada pela Silicon Quantum Computing Pty Limited e deverão ser usadas para a criação e comercialização de computadores quânticos em larga escala.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_2.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> O que é nanotecnologia? </h6>
+							<p style="    margin-top: 0;"> Entendimento e controle da matéria em nanoescala. Ela atua no desenvolvimento de materiais e componentes para diversas áreas. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Mídias Digitais - Arquitetura de Computadores</h5>
+					<p class="grey-text text-lighten-4">Site desenvolvido como parte de um projeto relativo ao trabalho N2 de Mídias Digitais com a premissa de midiatizar uma matéria (Arquitetura de Computadores) do curso de Engenharia de Computação.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">instagram.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">facebook.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">linkedin.com/engsoftwaredepressao</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>

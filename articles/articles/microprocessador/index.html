@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Artigo - Microprocessadores</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../../materialize/css/materialize.min.css'>
+	<script src='../../js/jquery-3.4.1.min.js'></script>
+	<script src='../../materialize/js/materialize.min.js'></script>
+	
+	<style>
+		.image_topic {
+			width: 100%;
+			height: 120px;;
+		}
+	</style>
+</head>
+<script>
+	window.onload = () => {
+		$('.carousel.carousel-slider').carousel({
+			fullWidth: true,
+			indicators: true
+		});
+	}
+</script>
+<body>
+	<nav class="grey darken-3">
+		<div class="nav-wrapper" style="width: 100%; margin: auto; padding-left: 30px;">
+			<a href="https://lcaratin.github.io/home/" class="brand-logo">Arquitetura de Computadores</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a>Documentos</a></li>
+				<li><a>Materiais de Estudo</a></li>
+				<li><a>Artigos Científicos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row">
+		<div id="content_container" class="col s8">
+			<div class="row">
+				<div class="col s12" style="padding-left: 30px;">
+					<header>
+						<h4 style="margin-bottom: 0px;">
+							Microprocessador 	
+						</h4>
+						<p style="margin-top: 0px;">
+							<i>
+								Introdução ao estudo de Microprocessadores
+							</i>
+						</p>
+					</header>
+					<section>
+						<img src="../../images/articles/microprocessador.png" class="">
+					</section>
+					<section>
+						<br/><br/>Estamos acostumados a falar sobre a CPU de um computador com o termo "microprocessador", mesmo estando certo, o microprocessador é algo mais complexo que inclui várias CPUs dentro da mesma peça.
+						<br/><br/>Chamamos um microprocessador de chip, um circuito integrado complexo cujo interior aloja um ou mais núcleos de CPU. Eventualmente, pode incluir outros componentes.
+						<br/><br/>Neste último caso, falamos geralmente de um SoC (System-on-a-Chip), que incorpora as GPU/s a uma GPU (unidade de controle de gráficos, por suas siglas em inglês) e/ou um controlador E/S entre outras possíveis funções.
+						<br/><br/>Um SoC é utilizado em dispositivos eletrônicos cujo espaço é reduzido, como smartphones, tablets ou computadores ultraportáteis.
+						<br/><br/>O microprocessador por si só não pode fazer nada, mas precisa estar inter-relacionado com o resto do mundo, algo que faz através de periféricos e software
+						<br/><br/>Para realizar esta interação, o microprocessador está conectado à chamada "placa-mãe", que é o elemento pelo qual conecta os periféricos.
+						<br/><br/>Os microprocessadores, como o resto dos chips de computadores e outros dispositivos eletrônicos, são fabricados por um semicondutor chamado Silicon, um elemento químico que pode ser encontrado na natureza.
+						<br/><br/>A história do uso comercial deste material começou nos anos 50 do século passado, mas foi por volta dos anos setenta que se solidificou como o primeiro microprocessador da história, o Intel 4004 de 4 bits.
+						<br/><br/>A partir deste momento os microprocessadores foram evoluindo, sendo cada vez mais miniaturizados, adicionando mais funcionalidades e aumentando sua capacidade de cálculo bruto, atingindo assim sua situação atual, onde em cada microprocessador podemos encontrar vários núcleos de execução (na prática, são várias CPUs), diversas linhas de execução (inclusive mais de um por núcleo) e adicionando cada dia mais funcionalidades.
+						<br/><br/>Antes do surgimento do primeiro microprocessador, os computadores eram constituídos por um conjunto de vários chips com tarefas mais específicas
+						<br/><br/>Daí vem o termo "microcomputador", uma vez que os primeiros microprocessadores eram menos potentes que os conjuntos de chips existentes até à data e, por serem de tamanho menor, também resultavam em computadores menores.
+						<br/><br/>Apesar de nas primeiras épocas haver uma série de arquiteturas para a fabricação de microprocessadores, atualmente, apenas dois dominam o panorama comercial: a x86 e a ARM.
+						<br/><br/>Tecnicamente, os microprocessadores podem realizar apenas operações matemáticas simples.
+						<br/><br/>As mais complexas e operacionais podem ser realizadas a partir da decomposição da operação em operações mais básicas, assim como é possível decompor uma multiplicação em adições sucessivas
+						<br/><br/>Embora muitos definam um microprocessador como um chip de propósito geral, o certo é que também há microprocessadores de propósito específico, como os DSP’s (processadores de sinais digitais, por suas siglas em inglês), os microcontroladores ou processadores de vídeo.
+						A este respeito, neste último caso, à medida que a tecnologia avança, possibilita o uso de processadores gráficos em tarefas de caráter geral, mesmo não sendo em todos os casos.
+
+							
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		<div id="side_container" class="col s4">
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: 1.55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_3.png" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Computação em nuvem? </h6>
+							<p style="    margin-top: 0;"> Os principais provedores globais de nuvem pública hoje, são a Amazon AWS, Microsoft Azure IBM e Google. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_1.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Nova Tecnologia </h6>
+							<p style="    margin-top: 0;"> Utilizada pela Silicon Quantum Computing Pty Limited e deverão ser usadas para a criação e comercialização de computadores quânticos em larga escala.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_2.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> O que é nanotecnologia? </h6>
+							<p style="    margin-top: 0;"> Entendimento e controle da matéria em nanoescala. Ela atua no desenvolvimento de materiais e componentes para diversas áreas. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Mídias Digitais - Arquitetura de Computadores</h5>
+					<p class="grey-text text-lighten-4">Site desenvolvido como parte de um projeto relativo ao trabalho N2 de Mídias Digitais com a premissa de midiatizar uma matéria (Arquitetura de Computadores) do curso de Engenharia de Computação.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">instagram.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">facebook.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">linkedin.com/engsoftwaredepressao</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>

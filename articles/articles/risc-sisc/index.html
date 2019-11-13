@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Artigo - Microprocessadores</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../../materialize/css/materialize.min.css'>
+	<script src='../../js/jquery-3.4.1.min.js'></script>
+	<script src='../../materialize/js/materialize.min.js'></script>
+	
+	<style>
+		.image_topic {
+			width: 100%;
+			height: 120px;;
+		}
+	</style>
+</head>
+<script>
+	window.onload = () => {
+		$('.carousel.carousel-slider').carousel({
+			fullWidth: true,
+			indicators: true
+		});
+	}
+</script>
+<body>
+	<nav class="grey darken-3">
+		<div class="nav-wrapper" style="width: 100%; margin: auto; padding-left: 30px;">
+			<a href="https://lcaratin.github.io/home/" class="brand-logo">Arquitetura de Computadores</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a>Documentos</a></li>
+				<li><a>Materiais de Estudo</a></li>
+				<li><a>Artigos Científicos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row">
+		<div id="content_container" class="col s8">
+			<div class="row">
+				<div class="col s12" style="padding-left: 30px;">
+					<header>
+						<h4 style="margin-bottom: 0px;">
+							RISC SISC 	
+						</h4>
+						<p style="margin-top: 0px;">
+							<i>
+								CISC e RISC são paradigmas de projeto de CPU e, por extensão, de todo o computador.
+							</i>
+						</p>
+					</header>
+
+					<section>
+						<b> CISC: Complex Instruction-Set Computer </b>
+						<br/>
+						<ul>	
+							<li style="list-style-type: disc;">FOCO NO SOFTWARE.</li>
+							<li style="list-style-type: disc;">É o paradigma inicial.</li>
+							<li style="list-style-type: disc;">Objetivo de facilitar a tarefa do desenvolvedor de compiladores ao oferecer suporte para linguagens de alto nível cada vez mais complexas.</li>
+							<li style="list-style-type: disc;">Uma vantagem, os programas tendem a ocupar menos espaço em memória.</li>
+							<li style="list-style-type: disc;">Com a evolução das linguagens de alto nível, os processadores foram incorporando cada vez mais recursos e tornando-se cada vez mais complexos:</li>
+							<li style="list-style-type: disc;">Muitos modos de endereçamento;</li>
+							<li style="list-style-type: disc;">Muitos formatos de instrução e instruções com mais endereços;</li>
+							<li style="list-style-type: disc;">Em geral usa mais a memória para armazenamento de dados;</li>
+							<li style="list-style-type: disc;">Uso de microprogramação (microcódigos).</li>
+							<li style="list-style-type: disc;">Uso de microcódigos na implementação da unidade de controle para melhor aproveitamento da pipeline.</li>
+						</ul>
+					</section>
+					<section>
+						<b> RISC: Reduced Instruction-Set Computer </b>
+						<br />
+						<ul>
+
+							<li style="list-style-type: disc;"> FOCO NO HARDWARE. </li>
+							<li style="list-style-type: disc;"> Início da década de 1980. </li>
+							<li style="list-style-type: disc;"> Objetivo de criar um hardware mais otimizado. </li>
+							<li style="list-style-type: disc;"> Iniciativas independentes que acabaram assumindo características comuns. </li>
+							<li style="list-style-type: disc;"> Grande número de registradores de propósito geral e/ou uso de um compilador que otimize o uso de registradores. </li>
+							<li style="list-style-type: disc;"> Enfoque na otimização do uso da pipeline de instruções. </li>
+							<li style="list-style-type: disc;"> Arquitetura Harvard. </li>
+							<li style="list-style-type: disc;"> Conjunto de instruções simples, limitado e de formato fixo: </li>
+							<li style="list-style-type: disc;"> Instruções com tempo de execução fixo (ao menos as que não envolvem desvio); </li>
+							<li style="list-style-type: disc;"> Operações de registador para registrador; </li>
+							<li style="list-style-type: disc;"> Modos de endereçamento simples (via registrador, indireto via registrador); </li>
+							<li style="list-style-type: disc;"> Formatos de instrução simples e de tamanho fixo (normalmente de 1 endereço). </li>
+						</ul>
+					</section>
+					<section>
+						<img src="../../images/articles/risc-sisc.jpg" class="" style="max-width: 500px;">
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		<div id="side_container" class="col s4">
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: 1.55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_3.png" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Computação em nuvem? </h6>
+							<p style="    margin-top: 0;"> Os principais provedores globais de nuvem pública hoje, são a Amazon AWS, Microsoft Azure IBM e Google. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_1.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Nova Tecnologia </h6>
+							<p style="    margin-top: 0;"> Utilizada pela Silicon Quantum Computing Pty Limited e deverão ser usadas para a criação e comercialização de computadores quânticos em larga escala.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_2.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> O que é nanotecnologia? </h6>
+							<p style="    margin-top: 0;"> Entendimento e controle da matéria em nanoescala. Ela atua no desenvolvimento de materiais e componentes para diversas áreas. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Mídias Digitais - Arquitetura de Computadores</h5>
+					<p class="grey-text text-lighten-4">Site desenvolvido como parte de um projeto relativo ao trabalho N2 de Mídias Digitais com a premissa de midiatizar uma matéria (Arquitetura de Computadores) do curso de Engenharia de Computação.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">instagram.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">facebook.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">linkedin.com/engsoftwaredepressao</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>
