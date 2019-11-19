@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Artigo - Microprocessadores</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='../../materialize/css/materialize.min.css'>
+	<script src='../../js/jquery-3.4.1.min.js'></script>
+	<script src='../../materialize/js/materialize.min.js'></script>
+	
+	<style>
+		.image_topic {
+			width: 100%;
+			height: 120px;;
+		}
+	</style>
+</head>
+<script>
+	window.onload = () => {
+		$('.carousel.carousel-slider').carousel({
+			fullWidth: true,
+			indicators: true
+		});
+	}
+</script>
+<body>
+	<nav class="grey darken-3">
+		<div class="nav-wrapper" style="width: 100%; margin: auto; padding-left: 30px;">
+			<a href="https://lcaratin.github.io/home/" class="brand-logo">Arquitetura de Computadores</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a>Documentos</a></li>
+				<li><a>Materiais de Estudo</a></li>
+				<li><a>Artigos Científicos</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="row">
+		<div id="content_container" class="col s8">
+			<div class="row">
+				<div class="col s12" style="padding-left: 30px;">
+					<header>
+						<h4 style="margin-bottom: 0px;">
+							Máquinas Virtuais e Containers
+						</h4>
+						<p style="margin-top: 0px;">
+							<i>
+								Máquinas Virtuais
+							</i>
+						</p>
+					</header>
+					<section>
+						<b> Definições </b>
+						<br/> <br/> A virtualização permite, essencialmente, desacoplar, ou dissociar recursos lógicos dos recursos físicos subjacentes. Existem vários níveis de virtualização, ou desse tipo de abstração se assim preferir, nos sistemas computacionais. A própria definição de Sistema Operacional é a de oferecer uma máquina virtual padronizada aos usuários e aplicações. No funcionamento do computador utilizam-se memória virtual e volumes lógicos (LVM). Há VPNs e VLANs em redes. Realidade virtual e aumentada têm estado em moda mais recentemente. E poderíamos esticar bastante esta lista.
+						<br/> <br/> Mas o tipo de máquina virtual (VM — Virtual Machine) que nos interessa aqui, inicialmente, são os chamados hipervisores. Essa história se inicia na década de 60 e foi se desenvolvendo para solucionar alguns problemas, ou gerar determinadas comodidades, como permitir retrocompatilidade e isolar aplicações e usuários, garantindo maior segurança e melhor utilização dos recursos. A partir de 1999, a virtualização ganhou novo impulso com a chegada à arquitetura x86 por meio da VMware e, em especial, com o acréscimo de suporte à virtualização em hardware nessa arquitetura promovidos pela Intel e AMD ao longo da década de 2000. Mais recentemente os containers se juntaram ao leque de opções para virtualização.
+						<br/> <br/> Além das aplicações mencionadas, exploraremos outras e também algumas implicações da virtualização e conteinerização, bem como alguns de seus principais conceitos a seguir. Se você ainda não se convenceu da importância do tema, pode começar conferindo a lista de aplicações no último tópico "contextualizando".
+						<br/> <br/> As máquinas virtuais são criadas através dos hipervisores, consistindo em uma abstração do hardware físico, ou seja, uma máquina puramente lógica, que se comporta como um computador real. Do ponto de vista do usuário, a máquina virtual (VM) é um sistema computacional como outro qualquer. Um usuário não tem como saber se está interagindo com uma máquina virtual ou com uma máquina física (bare metal). Do ponto de vista do kernel que executa a máquina virtual, a máquina virtual é um sistema puramente lógico e se constitui de uma série de arquivos que armazenam a configuração da máquina virtual, seu estado de memória, os conteúdo dos discos (memória secundária) da máquina virtual, arquivo de log e eventuais "instantâneos" da máquina virtual, os snapshots, uma espécie de "backup a quente" do sistema, que armazena o conteúdo da memória secundária e da memória principal, com todos os processos em execução, permitindo que se possa retornar àquele ponto posteriormente, clonar a VM, fazer com que a VM possa ser executada em outro host físico, etc.	
+						<br/> <br/> A "mágica" é feita por um software chamado hipervisor (hypervisor) que é executado no sistema operacional da máquina física, juntamente com o monitor de máquinas virtuais (Virtual Machine Monitor). Como a máquina virtual é do ponto de vista lógico um computador como outro qualquer, ele também precisa de um sistema operacional, chamado de guest, ou convidado. Que pode ser diferente do sistema operacional da máquina física. Aliás, é possível haver múltiplas máquinas virtuais em execução em uma máquina física, todas com sistemas operacionais distintos. O que se precisa respeitar é a arquitetura computacional (x86, ARM) e a capacidade do sistema físico.
+						<br/> <br/> Há dois tipos de hipervisores. Os hipervisores tipo 1, também chamados de bare metal, que se constituem basicamente de um kernel de SO com as funções de hipervisor. É o tipo mais usado em servidores e datacenters. Nessas máquinas não usamos os recursos da máquina física, apenas das máquinas virtuais. A lista de exemplos inclui as soluções principais da VMware, Xen, versões do Microsoft Hyper-V, Linux KVM e o novo XCP-ng, baseado no Xen.
+						<br/> <br/> Os hipervisores tipo 2, ou hosted (hospedados), rodam como uma aplicação sobre um sistema operacional instalado em uma máquina física (host, ou hospedeira). Isso é feito porque normalmente também queremos rodar aplicações no sistema operacional host. Por exemplo, colocamos um servidor web na máquina virtual e usamos o navegador da máquina física para acessá-lo. A lista de exemplos aqui inclui o VMware workstation, a versão específica do Microsoft Hyper-V, Gnome Boxes e o VirtualBox.
+						<br/> <br/> Por se tratar de um software open source, gratuito, multiplataforma, fácil de usar e muito bom. O VirtualBox acaba sendo a melhor recomendação para quem deseja se iniciar no mundo da virtualização e, mesmo para os mais avançados, ainda é uma das melhores opções. Ele está disponível em https://www.virtualbox.org/.
+						<br/> <br/>
+					</section>
+					<section>
+						<img src="../../images/articles/virtual_1.png" class="" style="max-width: 500px;">
+					</section>
+				</div>
+			</div>
+		</div>
+		
+		<div id="side_container" class="col s4">
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: 1.55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_3.png" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Computação em nuvem? </h6>
+							<p style="    margin-top: 0;"> Os principais provedores globais de nuvem pública hoje, são a Amazon AWS, Microsoft Azure IBM e Google. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_1.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> Nova Tecnologia </h6>
+							<p style="    margin-top: 0;"> Utilizada pela Silicon Quantum Computing Pty Limited e deverão ser usadas para a criação e comercialização de computadores quânticos em larga escala.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 0px;">
+				<div class="col s12" style="margin: .55rem 0 0 0;">
+					<div class="row" style="margin-bottom: 0px;">
+						<div class="col s4">
+							<img src="../../images/aside_facts/topic_2.jpg" class="image_topic">
+						</div>
+						<div class="col s8">
+							<h6 style="margin: 0 0 .46rem 0; font-weight: bold;"> O que é nanotecnologia? </h6>
+							<p style="    margin-top: 0;"> Entendimento e controle da matéria em nanoescala. Ela atua no desenvolvimento de materiais e componentes para diversas áreas. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	<footer class="page-footer grey darken-3">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Mídias Digitais - Arquitetura de Computadores</h5>
+					<p class="grey-text text-lighten-4">Site desenvolvido como parte de um projeto relativo ao trabalho N2 de Mídias Digitais com a premissa de midiatizar uma matéria (Arquitetura de Computadores) do curso de Engenharia de Computação.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">instagram.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">facebook.com/engsoftwaredepressao</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">linkedin.com/engsoftwaredepressao</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
+			</div>
+		</div>
+	</footer>
+	
+	
+</body>
+</html>
